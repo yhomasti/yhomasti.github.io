@@ -1650,3 +1650,23 @@ html {
 .project-video {
   max-height: 360px !important;
 }
+
+
+/* Force navigation to stay sticky */
+nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+}
+
+#desktop-nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+}
+
+#hamburger-nav {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 1000 !important;
+}
