@@ -1,6 +1,5 @@
 /*spotify.css in Spotify_Integration/spotify.css */
 
-
 /* === RHYTHM LINES === */
 .rhythm-lines-container {
     position: absolute;
@@ -57,7 +56,7 @@
   position: absolute;
   top: -30px;
 
-  /* was: right: -280px;  <-- remove this */
+  /* was: right: -280px;  <-- removed */
   left: 50%;
   right: auto;
 
@@ -74,8 +73,11 @@
 
   opacity: 0;
 
-  /* was: translateY(30px) scale(0.9) */
-  transform: translate(-50%, 30px) scale(0.9);
+  /* 👇 SHIFT RIGHT HERE (increase px to move more right; negative moves left) */
+  --spotify-shift-x: 70px;
+
+  /* was: transform: translate(-50%, 30px) scale(0.9) */
+  transform: translate(calc(-50% + var(--spotify-shift-x)), 30px) scale(0.9);
 
   transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
   pointer-events: none;
@@ -90,10 +92,9 @@
   pointer-events: auto;
   z-index: 1002;
 
-  /* was: translateY(0) scale(1) */
-  transform: translate(-50%, 0) scale(1);
+  /* was: transform: translate(-50%, 0) scale(1) */
+  transform: translate(calc(-50% + var(--spotify-shift-x)), 0) scale(1);
 }
-
 
 @keyframes pulse-glow {
     0%, 100% { 
@@ -469,7 +470,7 @@
 .music-wave:nth-child(2) { animation-delay: 0.1s; }
 .music-wave:nth-child(3) { animation-delay: 0.2s; }
 .music-wave:nth-child(4) { animation-delay: 0.3s; }
-.music-wave:nth-child(5) { animation-delay: 0.4s; }
+music-wave:nth-child(5) { animation-delay: 0.4s; }
 
 @keyframes waveAnimation {
     0%, 100% { 
