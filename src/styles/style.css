@@ -312,11 +312,10 @@ section {
 /* PROFILE SECTION */
 
 #profile {
-    display: flex;
-    justify-content: center;
-    gap: 5rem;
-    min-height: 80vh;
-    height: auto;
+  min-height: calc(100vh - 180px);
+  height: auto;
+  overflow: visible;
+  transform: none !important;
 }
 
 .section__pic-container {
