@@ -12,6 +12,19 @@ html, body {
   overflow-x: hidden;
 }
 
+
+html, body {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100%;
+  overflow-x: hidden;
+  /* do NOT set overflow-y here */
+}
+
+
 * {
   box-sizing: border-box;
 }
