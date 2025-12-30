@@ -1,3 +1,6 @@
+import { useRef } from 'react';
+
+
 function Animation() {
   return (
     <section id="art">
@@ -83,15 +86,44 @@ function Animation() {
       </div>
     </section>
   );
+  
 }
 
-//reusable animation card component
+//reusable animation card component with hover-to-play
 function AnimationCard({ title, skills, videoSrc, link }) {
+  const videoRef = useRef(null);
+
+  const handleMouseEnter = () => {
+    if (videoRef.current) {
+      videoRef.current.play().catch(err => {
+        console.log('play failed:', err);
+      });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (videoRef.current) {
+      videoRef.current.pause();
+      videoRef.current.currentTime = 0;
+    }
+  };
+
   return (
-    <div className="details-container color-container">
+    <div 
+      className="details-container color-container"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
       <div className="article-container">
         <a href={link}>
-          <video className="project-video" loop muted playsInline loading="lazy">
+          <video 
+            ref={videoRef}
+            className="project-video" 
+            loop 
+            muted 
+            playsInline
+            preload="metadata"
+          >
             <source src={videoSrc} type="video/mp4" />
           </video>
         </a>
