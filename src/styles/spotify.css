@@ -74,7 +74,7 @@
   opacity: 0;
 
   /* 👇 SHIFT RIGHT HERE (increase px to move more right; negative moves left) */
-  --spotify-shift-x: 70px;
+  --spotify-shift-x: 140px;
 
   /* was: transform: translate(-50%, 30px) scale(0.9) */
   transform: translate(calc(-50% + var(--spotify-shift-x)), 30px) scale(0.9);
