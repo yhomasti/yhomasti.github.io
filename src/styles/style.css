@@ -7,6 +7,16 @@ html {
   font-size: 100%;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   font-size: 1.00rem; 
 }
@@ -742,7 +752,6 @@ section {
 
 #projects {
     position: relative;
-    right: -5rem;
     bottom: 2.5rem; 
 }
 
@@ -1650,4 +1659,31 @@ html {
 .brand__icon {
   display: block;
   pointer-events: none;
+}
+
+
+/* --- Card sizing reset (override the big FINAL OVERRIDES) --- */
+.details-container {
+  padding: 1.5rem !important;
+  min-height: unset !important;     /* removes forced tall cards */
+}
+
+/* Make grids less huge */
+.art-containers {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)) !important;
+  gap: 2rem !important;
+}
+
+#art .art-containers,
+#code .art-containers {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+}
+
+/* Images/videos inside cards */
+.project-img {
+  max-height: 320px !important;
+}
+
+.project-video {
+  max-height: 360px !important;
 }
