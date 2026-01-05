@@ -316,8 +316,11 @@ section {
 }
 
 .section__pic-container:hover img {
-    transform: scale(1.05) rotate(2deg);
+    transform: scale(1.05) rotate(360deg);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    will-change: transform; /* Hints to browser for smoother animation */
+    backface-visibility: hidden; /* Prevents flickering during rotation */
+    -webkit-backface-visibility: hidden;
 }
 
 /* PROFILE SECTION */
@@ -1570,60 +1573,6 @@ html {
     line-height: 1.6 !important;
     text-align: center !important;
 }
-
-/* === Brand logo (sock icon + "Thomas Yi") === */
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  text-decoration: none;
-}
-
-.brand__icon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px; /* optional: remove if you want it perfectly square */
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.brand__text {
-  line-height: 1;
-  display: inline-block;
-}
-
-/* === Brand logo: keep hitbox stable (no transform on container) === */
-.logo.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.55rem;
-  border: 1px solid transparent; /* prevents any layout shift if border ever changes */
-  transform: none !important;    /* <-- critical */
-}
-
-.logo.brand:hover {
-  transform: none !important;    /* <-- critical */
-}
-
-/* Apply the fun hover effect to the TEXT only */
-.logo.brand .brand__text {
-  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1),
-              color 0.3s ease,
-              text-shadow 0.3s ease;
-}
-
-.logo.brand:hover .brand__text {
-  color: #007BFF;
-  transform: scale(1.05);        /* fun without flicker */
-  text-shadow: 0 2px 10px rgba(0, 123, 255, 0.2);
-}
-
-/* Keep icon stable */
-.brand__icon {
-  display: block;
-  pointer-events: none;
-}
-
 
 /* --- Card sizing reset (override the big FINAL OVERRIDES) --- */
 .details-container {
