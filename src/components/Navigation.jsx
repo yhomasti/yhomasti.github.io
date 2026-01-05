@@ -9,7 +9,6 @@ function Navigation() {
     setMenuOpen(!menuOpen);
   };
 
-  // Scroll effect + active section highlighting
   useEffect(() => {
     const handleScroll = () => {
       setScrolled(window.scrollY > 30);
@@ -30,61 +29,30 @@ function Navigation() {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // run once on mount
+    handleScroll();
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  // Brand (sock icon + name)
-  const Brand = () => (
-    <a
-      href="#profile"
-      className="logo brand"
-      onClick={() => setMenuOpen(false)}
-      aria-label="Go to top"
-    >
-      <img className="brand__icon" src="/assets/sock-profile.png" alt="" />
-      <span className="brand__text">Thomas Yi</span>
-    </a>
-  );
 
   return (
     <>
       <nav id="desktop-nav" className={scrolled ? 'scrolled' : ''}>
-        <Brand />
+        {/* Just text logo */}
+        <a href="/" className="logo">Thomas Yi</a>
 
         <div>
           <ul className="nav-links">
-            <li>
-              <a href="#about" className={activeSection === 'about' ? 'active' : ''}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#art" className={activeSection === 'art' ? 'active' : ''}>
-                Animation
-              </a>
-            </li>
-            <li>
-              <a href="#code" className={activeSection === 'code' ? 'active' : ''}>
-                Code
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>
-                Contact
-              </a>
-            </li>
+            <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a></li>
+            <li><a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</a></li>
+            <li><a href="#art" className={activeSection === 'art' ? 'active' : ''}>Animation</a></li>
+            <li><a href="#code" className={activeSection === 'code' ? 'active' : ''}>Code</a></li>
+            <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a></li>
           </ul>
         </div>
       </nav>
 
       <nav id="hamburger-nav" className={scrolled ? 'scrolled' : ''}>
-        <Brand />
+        {/* Just text logo */}
+        <div className="logo">Thomas Yi</div>
 
         <div className="hamburger-menu">
           <div className={`hamburger-icon ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
@@ -94,31 +62,11 @@ function Navigation() {
           </div>
 
           <div className={`menu-links ${menuOpen ? 'open' : ''}`}>
-            <li>
-              <a href="#about" onClick={toggleMenu}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#experience" onClick={toggleMenu}>
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#art" onClick={toggleMenu}>
-                Animation
-              </a>
-            </li>
-            <li>
-              <a href="#code" onClick={toggleMenu}>
-                Code
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={toggleMenu}>
-                Contact
-              </a>
-            </li>
+            <li><a href="#about" onClick={toggleMenu}>About</a></li>
+            <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
+            <li><a href="#art" onClick={toggleMenu}>Animation</a></li>
+            <li><a href="#code" onClick={toggleMenu}>Code</a></li>
+            <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
           </div>
         </div>
       </nav>
