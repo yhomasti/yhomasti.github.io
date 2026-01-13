@@ -47,7 +47,7 @@ function Animation() {
             videoSrc="/assets/3D/049 - 301Boats - 24 HOURS Animation Contest for Students 2025 - 24HOURS Animation Contest for Students (1080p, h264, youtube).mp4"
             link="/3d_animations/24Hour2025.html"  // Changed from /24hour2025
             />
-
+            {/*
             <AnimationCard
             title="11 Second Club May"
             skills="Maya 2025"
@@ -55,26 +55,32 @@ function Animation() {
             link="/3d_animations/11secondmay.html"  // Changed from /11secondMay
             />
 
+            */}
+
             <AnimationCard
             title='"An Early April Morning"'
             skills="Maya 2025, Substance Painter, Photoshop"
             videoSrc="/assets/3D/Thomas Yi - Animation 1 Final RERENDER.mp4"
             link="/3d_animations/anim1.html"  // Changed from /earlyAprilMorning
             />
-
+            
+            {/*
             <AnimationCard
             title="11 Second Club - March"
             skills="Maya 2025"
             videoSrc="/assets/3D/11SecondClubMarchFINAL.mp4"
             link="/3d_animations/childhoodmisconception.html"  // Changed
             />
+            */}
 
+            {/*
             <AnimationCard
             title="AlcoholiCat"
             skills="Blender"
             videoSrc="/assets/3D/UnstableDrunkCatFilm.mp4"
             link="/3d_animations/unstablecat.html"  // Changed
             />
+            */}
 
             <AnimationCard
             title='"Aerial Anarchy"'
