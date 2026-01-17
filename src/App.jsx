@@ -3,8 +3,8 @@ import Navigation from './components/Navigation';
 import Profile from './components/Profile';
 import About from './components/About';
 import Experience from './components/Experience';
-import Animation from './components/Animation';
 import Code from './components/Code';
+import Animation from './components/Animation';
 import Contact from './components/Contact';
 import './styles/style.css';
 import './styles/mediaqueries.css';
@@ -90,8 +90,8 @@ function App() {
       <Profile />
       <About />
       <Experience />
-      <Animation />
       <Code />
+      <Animation />
       <Contact />
     </>
   );

@@ -43,8 +43,8 @@ function Navigation() {
           <ul className="nav-links">
             <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a></li>
             <li><a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</a></li>
-            <li><a href="#art" className={activeSection === 'art' ? 'active' : ''}>Animation</a></li>
             <li><a href="#code" className={activeSection === 'code' ? 'active' : ''}>Code</a></li>
+            <li><a href="#art" className={activeSection === 'art' ? 'active' : ''}>Animation</a></li>
             <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a></li>
           </ul>
         </div>
@@ -64,8 +64,8 @@ function Navigation() {
           <div className={`menu-links ${menuOpen ? 'open' : ''}`}>
             <li><a href="#about" onClick={toggleMenu}>About</a></li>
             <li><a href="#experience" onClick={toggleMenu}>Experience</a></li>
-            <li><a href="#art" onClick={toggleMenu}>Animation</a></li>
             <li><a href="#code" onClick={toggleMenu}>Code</a></li>
+            <li><a href="#art" onClick={toggleMenu}>Animation</a></li>
             <li><a href="#contact" onClick={toggleMenu}>Contact</a></li>
           </div>
         </div>
