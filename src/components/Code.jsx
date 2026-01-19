@@ -81,7 +81,7 @@ function Code() {
               */}
               <button 
                 className="btn btn-color-2 project-btn"
-                onClick={() => window.location.href = 'https://github.com/yhomasti'}
+                onClick={() => window.location.href = 'https://github.com/yhomasti/Maya-Twinning-Offset-Tool'}
               >
                 Github
               </button>
