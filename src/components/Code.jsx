@@ -64,11 +64,11 @@ function Code() {
                 }}
                 onClick={() => !expandedMaya && toggleMayaDemo()}
               >
-                <source src="/assets/coding/Twinning Plugin Demo.mp4" type="video/mp4" />
+                <source src="/assets/coding/Twinning Plugin Compressed.mp4" type="video/mp4" />
               </video>
             </div>
             <h2 className="experience-sub-title">Maya Animation Offset Editor Plug-in</h2>
-            <p className="project-skills">Python, Maya API, PyQt5</p>
+            <p className="project-skills">Python, Maya API</p>
             
             <div className="btn-container">
               {/* 
