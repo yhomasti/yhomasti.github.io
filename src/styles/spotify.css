@@ -341,8 +341,8 @@
 /*thought bubble styles*/
 .thought-bubble {
   position: absolute;
-  top: -80px;
-  left: 50%;
+  top: -45px;
+  left: -10%;
   transform: translateX(-50%);
   background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
   color: #495057;
@@ -362,7 +362,7 @@
   content: '';
   position: absolute;
   bottom: -8px;
-  left: 50%;
+  left: 75%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
