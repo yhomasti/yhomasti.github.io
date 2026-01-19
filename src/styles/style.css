@@ -1730,8 +1730,8 @@ nav {
 }
 
 .profile-spotify-section .section__pic-container {
-  height: 280px; /* Reduced from 320px */
-  width: 280px; /* Reduced from 320px */
+  height: 250px; /* Reduced from 280px */
+  width: 250px; /* Reduced from 280px */
 }
 
 /* Bottom Row - Two Cards Side by Side */
