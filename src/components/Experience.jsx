@@ -69,7 +69,7 @@ function Experience() {
             </div>
             
             <div className="research-meta">
-              <p><strong>Duration:</strong> September 2025 - December 2025</p>
+              <p><strong>Duration:</strong> August 2025 - December 2025</p>
               <p><strong>Institution:</strong> Northeastern University</p>
             </div>
           </div>
