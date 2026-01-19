@@ -29,7 +29,7 @@ function Profile() {
         <div className="profile-intro">
           <p className="section__text__p1">Hello! I am...</p>
           <h1 className="title">Thomas Yi</h1>
-          <p className="section__text__p2">Technical Artist & Pipeline Developer</p>
+          <p className="section__text__p2">3D Animator and Pipeline Developer</p>
           
           <div className="profile-actions">
             <button 
