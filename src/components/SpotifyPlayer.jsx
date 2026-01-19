@@ -5,6 +5,7 @@ function SpotifyPlayer() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isOffline, setIsOffline] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [progress, setProgress] = useState(0); // NEW - track progress
 
   //format time from milliseconds to MM:SS
   const formatTime = (ms) => {
@@ -29,6 +30,7 @@ function SpotifyPlayer() {
       if (data.track) {
         setTrackData(data.track);
         setIsPlaying(data.isPlaying);
+        setProgress(data.progress_ms || 0); // NEW - set progress
         setIsOffline(false);
         setLoading(false);
       } else {
@@ -48,6 +50,11 @@ function SpotifyPlayer() {
     const interval = setInterval(fetchCurrentTrack, 5000);
     return () => clearInterval(interval);
   }, []);
+
+  // NEW - Calculate progress percentage
+  const progressPercent = trackData?.duration_ms 
+    ? (progress / trackData.duration_ms) * 100 
+    : 0;
 
   return (
     <div className="spotify-tooltip" id="spotify-tooltip">
@@ -90,11 +97,11 @@ function SpotifyPlayer() {
                 <div className="song-progress-bar">
                   <div 
                     className="song-progress-fill"
-                    style={{ width: '0%' }}
+                    style={{ width: `${progressPercent}%` }} // CHANGED - use actual progress
                   ></div>
                 </div>
                 <div className="song-progress-time">
-                  <span>0:00</span>
+                  <span>{formatTime(progress)}</span> {/* CHANGED - show current progress */}
                   <span>{formatTime(trackData.duration_ms)}</span>
                 </div>
               </div>
