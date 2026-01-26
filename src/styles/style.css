@@ -1722,7 +1722,7 @@ nav {
   animation: scaleIn 0.6s ease 1.4s forwards;
 }
 
-/* Spotify Section */
+/* Spotify Section
 .profile-spotify-section {
   display: flex;
   justify-content: center;
@@ -1730,9 +1730,10 @@ nav {
 }
 
 .profile-spotify-section .section__pic-container {
-  height: 250px; /* Reduced from 280px */
-  width: 250px; /* Reduced from 280px */
+  height: 250px; 
+  width: 250px; 
 }
+  */
 
 /* Bottom Row - Two Cards Side by Side */
 .profile-cards-row {
@@ -1886,4 +1887,37 @@ nav {
   .card-video-container {
     height: 100px;
   }
+}
+
+/* Profile Picture Section - No Spotify */
+.profile-pic-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  justify-content: center;
+}
+
+.profile-pic-section .section__pic-container {
+  width: 260px !important;
+  height: 260px !important;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-pic-section .section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.current-position {
+  font-size: 0.95rem;
+  color: #007BFF;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  opacity: 0;
+  animation: slideInUp 0.8s ease 1.2s forwards;
 }

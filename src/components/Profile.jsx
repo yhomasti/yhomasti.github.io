@@ -1,35 +1,16 @@
 import { useState, useEffect } from 'react';
-import SpotifyPlayer from './SpotifyPlayer';
+// import SpotifyPlayer from './SpotifyPlayer';
 
 function Profile() {
-  const [thoughtTextIndex, setThoughtTextIndex] = useState(0);
-  
-  const thoughtTexts = [
-    "What am I listening to now?",
-    "Wonder what Thomas likes to listen to?",
-    "What's on Thomas's playlist?",
-    "Curious about my music taste? Don't be disappointed!",
-    "What song is stuck in my head?"
-  ];
-
-  //rotate thought bubble text
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setThoughtTextIndex(prev => (prev + 1) % thoughtTexts.length);
-    }, 10000);
-
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <section id="profile">
-      {/* Top Row - Intro Text + Spotify */}
+      {/* Top Row - Intro Text + Profile Pic */}
       <div className="profile-top-row">
         {/* Left - Text */}
         <div className="profile-intro">
           <p className="section__text__p1">Hello! I am...</p>
           <h1 className="title">Thomas Yi</h1>
-          <p className="section__text__p2">3D Animator and Pipeline Developer</p>
+          <p className="section__text__p2">Technical Artist & Pipeline Developer</p>
           
           <div className="profile-actions">
             <button 
@@ -55,24 +36,20 @@ function Profile() {
           </div>
         </div>
 
-        {/* Right - Spotify Player + Profile Pic */}
-        <div className="profile-spotify-section">
-          <div className="section__pic-container spotify-enhanced">
+        {/* Right - Profile Pic with Tagline Below */}
+        <div className="profile-pic-section">
+
+          {/* Tagline below image */}
+          <p className="current-position">Currently: Software Engineer Intern at Warner Bros. Discovery</p>
+          <div className="section__pic-container">
             <img 
-              src="/assets/sock-profile.png" 
+              src="/assets/Thomas Linkedin Post WB.png" 
               alt="Thomas Yi profile picture" 
               id="profile-pic" 
             />
-            
-            <div className="thought-bubble">
-              <span className="thought-bubble-text">{thoughtTexts[thoughtTextIndex]}</span><br />
-              <small style={{ opacity: 0.7, fontStyle: 'italic' }}>
-                (Hover over me to find out!)
-              </small>
-            </div>
-
-            <SpotifyPlayer />
           </div>
+          
+          
         </div>
       </div>
 
@@ -93,7 +70,7 @@ function Profile() {
               muted
               playsInline
             >
-              <source src="/assets/coding/Twinning Plugin Compressed.mp4" type="video/mp4" />
+              <source src="/assets/coding/Twinning Plugin Demo.mp4" type="video/mp4" />
             </video>
           </div>
           
@@ -105,7 +82,7 @@ function Profile() {
           onClick={() => window.location.href = '#art'}
         >
           <h3>3D Animation</h3>
-          <p className="card-subtitle">Character Animation & 3D Art</p>
+          <p className="card-subtitle">Character Animation & Storytelling</p>
           
           <div className="card-video-container">
             <video 
