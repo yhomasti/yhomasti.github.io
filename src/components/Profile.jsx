@@ -10,7 +10,7 @@ function Profile() {
         <div className="profile-intro">
           <p className="section__text__p1">Hello! I am...</p>
           <h1 className="title">Thomas Yi</h1>
-          <p className="section__text__p2">Technical Artist & Pipeline Developer</p>
+          <p className="section__text__p2">3D Animator & Pipeline Developer</p>
           
           <div className="profile-actions">
             <button 
@@ -43,7 +43,7 @@ function Profile() {
           <p className="current-position">Currently: Software Engineer Intern at Warner Bros. Discovery</p>
           <div className="section__pic-container">
             <img 
-              src="/assets/Thomas Linkedin Post WB.png" 
+              src="/assets/Thats all folks-modified.png" 
               alt="Thomas Yi profile picture" 
               id="profile-pic" 
             />
