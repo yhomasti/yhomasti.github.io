@@ -815,6 +815,11 @@ section {
   transform: scale(1.05) rotate(360deg);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
 }
+#about .section__text__p1 {
+  text-align: center;
+}
+
+
 
 .about-current-position {
   font-size: 0.95rem;
