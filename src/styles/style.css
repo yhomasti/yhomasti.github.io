@@ -1811,13 +1811,12 @@ nav {
 
 /* Expanded reel styles */
 .reel-expanded {
-  grid-column: 1 / -1; /* Takes full width when expanded */
 }
 
 .card-youtube-embed {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 75%; /* 16:9 aspect ratio */
   height: 0;
   overflow: hidden;
   border-radius: 0.8rem;
