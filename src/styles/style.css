@@ -1929,7 +1929,7 @@ nav {
   gap: 1.5rem; /* Reduced from 2rem */
   height: 85vh;
   min-height: fit-content;
-  padding-top: 3vh; /* Reduced from 4vh */
+  padding-top: 1vh; /* Reduced from 4vh */
 }
 
 /* Top Row - Intro Text + Spotify Side by Side */
