@@ -38,14 +38,14 @@ function Animation() {
             title="Fire That Thing!"
             skills="Maya 2025"
             videoSrc="/assets/3D/FireThatThing.mp4"
-            link="/3d_animations/fireThatThing.html"  // Changed from /fireThatThing
+            link="/3d_animations/fireThatThing.html"  
             />
 
             <AnimationCard
             title="24 Hour Animation Contest 2025"
             skills="Blender"
             videoSrc="/assets/3D/049 - 301Boats - 24 HOURS Animation Contest for Students 2025 - 24HOURS Animation Contest for Students (1080p, h264, youtube).mp4"
-            link="/3d_animations/24Hour2025.html"  // Changed from /24hour2025
+            link="/3d_animations/24Hour2025.html"  
             />
             {/*
             <AnimationCard
@@ -61,7 +61,7 @@ function Animation() {
             title='"An Early April Morning"'
             skills="Maya 2025, Substance Painter, Photoshop"
             videoSrc="/assets/3D/Thomas Yi - Animation 1 Final RERENDER.mp4"
-            link="/3d_animations/anim1.html"  // Changed from /earlyAprilMorning
+            link="/3d_animations/anim1.html"  
             />
             
             {/*
@@ -129,6 +129,7 @@ function AnimationCard({ title, skills, videoSrc, link }) {
             muted 
             playsInline
             preload="metadata"
+            autoPlay
           >
             <source src={videoSrc} type="video/mp4" />
           </video>
