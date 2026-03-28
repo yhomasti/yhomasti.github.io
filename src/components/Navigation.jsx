@@ -43,8 +43,8 @@ function Navigation() {
           <ul className="nav-links">
             <li><a href="#about" className={activeSection === 'about' ? 'active' : ''}>About</a></li>
             <li><a href="#experience" className={activeSection === 'experience' ? 'active' : ''}>Experience</a></li>
-            <li><a href="#code" className={activeSection === 'code' ? 'active' : ''}>Code</a></li>
             <li><a href="#art" className={activeSection === 'art' ? 'active' : ''}>Animation</a></li>
+            <li><a href="#code" className={activeSection === 'code' ? 'active' : ''}>Code</a></li>
             <li><a href="#contact" className={activeSection === 'contact' ? 'active' : ''}>Contact</a></li>
           </ul>
         </div>

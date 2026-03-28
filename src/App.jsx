@@ -90,8 +90,8 @@ function App() {
       <Profile />
       <About />
       <Experience />
-      <Code />
       <Animation />
+      <Code />
       <Contact />
     </>
   );

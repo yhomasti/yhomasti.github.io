@@ -1729,7 +1729,7 @@ nav.scrolled {
     padding-left: 18px;
 }
 
-/*MAKING THE PROFILE PICTURE SPIN WOOOO*/
+/*MAKING THE PROFILE PICTURE SPIN*/
 .section__pic-container img {
     transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
     border-radius: 50%;
@@ -2271,4 +2271,12 @@ section .section__text__p1 {
   animation: slideInUp 0.8s ease 1.2s forwards;
 }
 
-
+/* Project descriptions - one sentence summaries */
+.project-description {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0.8rem 0;
+  text-align: left;
+  padding: 0 1rem;
+}

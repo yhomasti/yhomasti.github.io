@@ -9,33 +9,45 @@ function Profile() {
 
   return (
     <section id="profile">
-      {/* Centered Intro Text */}
-      <div className="profile-intro-centered">
-        <p className="section__text__p1">Hello! I am...</p>
-        <h1 className="title">Thomas Yi</h1>
-        <p className="section__text__p2">3D Animator & Pipeline Developer</p>
-        
-        <div className="profile-actions">
-          <button 
-            className="btn btn-color-1" 
-            onClick={() => window.location.href = '#contact'}
-          >
-            Contact
-          </button>
-          <div className="socials-row">
-            <img 
-              src="/assets/linkedin.png" 
-              alt="My LinkedIn profile"
-              className="icon" 
-              onClick={() => window.location.href = 'https://www.linkedin.com/in/yhomasti/'}
-            />
-            <img 
-              src="/assets/email.png" 
-              alt="Email me!"
-              className="icon" 
-              onClick={() => window.location.href = 'mailto:thomasyi2005@gmail.com'}
-            />
+      <div className="profile-top-row">
+
+        {/* Centered Intro Text */}
+        <div className="profile-intro-centered">
+          <p className="section__text__p1">Hello! I am...</p>
+          <h1 className="title">Thomas Yi</h1>
+          <p className="section__text__p2">3D Animator & Pipeline Developer</p>
+          
+          <div className="profile-actions">
+            <button 
+              className="btn btn-color-1" 
+              onClick={() => window.location.href = '#contact'}
+            >
+              Contact
+            </button>
+            <div className="socials-row">
+              <img 
+                src="/assets/linkedin.png" 
+                alt="My LinkedIn profile"
+                className="icon" 
+                onClick={() => window.location.href = 'https://www.linkedin.com/in/yhomasti/'}
+              />
+              <img 
+                src="/assets/email.png" 
+                alt="Email me!"
+                className="icon" 
+                onClick={() => window.location.href = 'mailto:thomasyi2005@gmail.com'}
+              />
+            </div>
           </div>
+        </div>
+
+        <div className="about-wb-container">
+            <img 
+              src="/assets/Thats all folks-modified.png" 
+              alt="Thomas Yi at Warner Bros" 
+              className="about-wb-image"
+            />
+            <p className="about-current-position">Currently: Software Engineer Intern at Warner Bros. Games</p>
         </div>
       </div>
 
