@@ -4,8 +4,8 @@ import { useRef } from 'react';
 function Animation() {
   return (
     <section id="art">
-      <p className="section__text__p1">Check out some of my...</p>
-      <h1 className="title">3D Animation</h1>
+      <p className="section__text__p1">Check out my...</p>
+      <h1 className="title">Animation Portfolio</h1>
 
       {/* Demo Reel */}
         <div className="demo-reel-container">

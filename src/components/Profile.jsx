@@ -15,7 +15,7 @@ function Profile() {
         <div className="profile-intro-centered">
           <p className="section__text__p1">Hello! I am...</p>
           <h1 className="title">Thomas Yi</h1>
-          <p className="section__text__p2">3D Animator & Pipeline Developer</p>
+          <p className="section__text__p2">3D Animator & Technical Artist</p>
           
           <div className="profile-actions">
             <button 
@@ -51,16 +51,39 @@ function Profile() {
         </div>
       </div>
 
-      {/* Two Cards - TD Reel + Animation */}
+      {/* Two Cards - Animation + TD Reel */}
       <div className="profile-cards-row">
+        {/* 3D Animation Card */}
+        <div
+          className="profile-nav-card animation-card"
+          onClick={() => window.location.href = '#art'}
+        >
+          <h3>3D Animation</h3>
+          <p className="card-subtitle">Character Animation & Storytelling</p>
+
+          <div className="card-video-container">
+            <video
+              className="card-preview-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src="/assets/3D/FireThatThing.mp4" type="video/mp4" />
+            </video>
+          </div>
+
+          <p className="card-cta">Click here to check out my animation portfolio →</p>
+        </div>
+
         {/* TD Demo Reel Card */}
         <div className={`profile-nav-card tech-card ${reelExpanded ? 'reel-expanded' : ''}`}>
           <h3>Technical Direction Demo Reel</h3>
           <p className="card-subtitle">Pipeline Tools & Development</p>
-          
+
           {!reelExpanded ? (
             <div className="card-video-container" onClick={toggleReel} style={{ cursor: 'pointer' }}>
-              <img 
+              <img
                 src="https://img.youtube.com/vi/VgLU79oU2dI/maxresdefault.jpg"
                 alt="TD Demo Reel Thumbnail"
                 className="youtube-thumbnail"
@@ -80,44 +103,21 @@ function Profile() {
               ></iframe>
             </div>
           )}
-          
+
           <div className="reel-buttons">
-            <button 
+            <button
               className="btn btn-color-2 project-btn"
               onClick={(e) => { e.stopPropagation(); toggleReel(); }}
             >
               {reelExpanded ? 'Close Reel ✕' : 'Watch Reel'}
             </button>
-            <button 
+            <button
               className="btn btn-color-2 project-btn"
               onClick={(e) => { e.stopPropagation(); window.location.href = '#code'; }}
             >
               View Projects →
             </button>
           </div>
-        </div>
-
-        {/* 3D Animation Card */}
-        <div 
-          className="profile-nav-card animation-card"
-          onClick={() => window.location.href = '#art'}
-        >
-          <h3>3D Animation</h3>
-          <p className="card-subtitle">Character Animation & Storytelling</p>
-          
-          <div className="card-video-container">
-            <video 
-              className="card-preview-video"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src="/assets/3D/FireThatThing.mp4" type="video/mp4" />
-            </video>
-          </div>
-          
-          <p className="card-cta">Click here to check out my animation portfolio →</p>
         </div>
       </div>
     </section>
