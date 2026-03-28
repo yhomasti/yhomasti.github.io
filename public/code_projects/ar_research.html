@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AR Research - Thomas Yi</title>
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../mediaqueries.css">
+  <link rel="icon" href="../assets/favicon.png" type="image/png" />
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo-wrapper">
+            <a href="../index.html" class="logo">Thomas Yi</a>
+        </div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="../#about">About</a></li>
+                <li><a href="../#art">Animation</a></li>
+                <li><a href="../#experience">Experience</a></li>
+                <li><a href="../#code">Code</a></li>
+                <li><a href="../#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo-container">
+            <div class="logo">Thomas Yi</div>
+            <button class="back-button logo-back" onclick="location.href='../#code'">← Back to Projects</button>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="../#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="../#art" onclick="toggleMenu()">Animation</a></li>
+                <li><a href="../#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="../#code" onclick="toggleMenu()">Code</a></li>
+                <li><a href="../#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-detail-container">
+        <div class="project-detail-card">
+          <h1 class="title">Real-Time AR Scene Alignment</h1>
+          <p class="project-skills">Python, C#, FastAPI, PyTorch, OpenCV, NumPy, Unity, Microsoft HoloLens 2</p>
+
+          <video class="project-video-sm" controls playsinline autoplay loop muted>
+            <source src="../research/Screen Recording 2025-10-20 130337.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+
+          <div class="text-container">
+            <p class="project-intro">Project Overview</p>
+            <p class="project-meta">
+              Augmented Reality Research Assistant Co-op at Northeastern University's
+              <a href="https://realitydesign.sites.northeastern.edu/" target="_blank" rel="noopener noreferrer">Reality Design Lab</a>
+              (August 2025 - December 2025).
+            </p>
+            <p class="project-meta">
+              This project focuses on creating real-time AI-driven camera localization to enable shared spatial alignment
+              across multiple devices without GPS.
+            </p>
+
+            <p class="project-intro">Technical Details</p>
+            <ul>
+              <li>Developed a real-time pose estimation server using FastAPI and
+                <a href="https://vgg-t.github.io/" target="_blank" rel="noopener noreferrer">VGGT</a>
+                (Visual Geometry Grounded Transformer) for multi-device localization.</li>
+              <li>Implemented cross-device spatial synchronization, establishing a shared coordinate system for collaborative AR scenes.</li>
+              <li>Designed debugging and visualization tools in Unity (pose HUDs, coordinate axes, origin spheres) for real-time alignment feedback.</li>
+              <li>Built a full-stack pipeline connecting Python-based AI inference with Unity clients over the network.</li>
+            </ul>
+
+            <p class="project-intro">Technologies</p>
+            <ul>
+              <li><strong>Server:</strong> Python, FastAPI, PyTorch, OpenCV, NumPy</li>
+              <li><strong>Client:</strong> C#, Unity, Microsoft HoloLens 2</li>
+              <li><strong>AI Model:</strong> VGGT (Visual Geometry Grounded Transformer)</li>
+            </ul>
+          </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>

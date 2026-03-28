@@ -17,8 +17,8 @@ function About() {
 
         <div className="about-bio">
           <p className="about-description">
-            Hello! I'm Thomas! I'm a 3D animator and developer. I have a passion for telling stories and finding ways to express them, and I believe everyone should express 
-            their childish side every so often in their work. I am always looking for a chance to grow and learn more 
+            Hello! I'm Thomas! I'm a 3D animator and technical artist with a passion for telling stories and bringing characters to life. I love finding creative ways to express ideas through animation, and I believe everyone should express
+            their childish side every so often in their work. With a strong background in programming and pipeline development, I bridge the gap between art and technology. I am always looking for a chance to grow and learn more
             while pushing others and myself to be the best version of themselves that they can be.
           </p>
         </div>

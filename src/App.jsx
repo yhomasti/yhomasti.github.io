@@ -89,8 +89,8 @@ function App() {
       <Navigation />
       <Profile />
       <About />
-      <Experience />
       <Animation />
+      <Experience />
       <Code />
       <Contact />
     </>
