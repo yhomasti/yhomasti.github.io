@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+const base = import.meta.env.BASE_URL;
+
 function Code() {
   const [expandedDemo, setExpandedDemo] = useState(false);
   const [expandedMaya, setExpandedMaya] = useState(false);
@@ -51,7 +53,7 @@ function Code() {
           {/* AR Research Project */}
           <div className="details-container color-container">
             <div className="article-container">
-              <a href="/code_projects/ar_research.html">
+              <a href={`${base}code_projects/ar_research.html`}>
                 <video
                   className="project-video"
                   autoPlay
@@ -59,7 +61,7 @@ function Code() {
                   muted
                   playsInline
                 >
-                  <source src="/research/Screen Recording 2025-10-20 130337.mp4" type="video/mp4" />
+                  <source src={`${base}research/Screen Recording 2025-10-20 130337.mp4`} type="video/mp4" />
                 </video>
               </a>
             </div>
@@ -68,7 +70,7 @@ function Code() {
             <div className="btn-container">
               <button
                 className="btn btn-color-2 project-btn"
-                onClick={() => window.location.href = '/code_projects/ar_research.html'}
+                onClick={() => window.location.href = `${base}code_projects/ar_research.html`}
               >
                 View Project
               </button>
@@ -91,7 +93,7 @@ function Code() {
                 }}
                 onClick={() => !expandedMaya && toggleMayaDemo()}
               >
-                <source src="/assets/coding/Twinning Plugin Compressed.mp4" type="video/mp4" />
+                <source src={`${base}assets/coding/Twinning Plugin Compressed.mp4`} type="video/mp4" />
               </video>
             </div>
             <h2 className="experience-sub-title">Maya Animation Offset Editor Plug-in</h2>
@@ -119,7 +121,7 @@ function Code() {
           <div className={`details-container color-container ${expandedDemo ? 'expanded-card' : ''}`}>
             <div className="article-container">
               <img 
-                src="/assets/coding/rosesLineart.png"
+                src={`${base}assets/coding/rosesLineart.png`}
                 alt="Lineart Generator"
                 className="project-img"
                 onClick={toggleLineartDemo}
@@ -134,7 +136,7 @@ function Code() {
                 style={{ display: expandedDemo ? 'block' : 'none' }}
                 autoPlay={expandedDemo}
               >
-                <source src="/assets/coding/LineArtDemo.mp4" type="video/mp4" />
+                <source src={`${base}assets/coding/LineArtDemo.mp4`} type="video/mp4" />
               </video>
             </div>
             <h2 className="experience-sub-title">Krita Lineart Generator</h2>
@@ -153,7 +155,7 @@ function Code() {
           {/* Raytracer */}
           <div className="details-container color-container">
             <div className="article-container">
-              <img src="/assets/raytraced_scene_final.png" alt="Raytracer" className="project-img" />
+              <img src={`${base}assets/raytraced_scene_final.png`} alt="Raytracer" className="project-img" />
             </div>
             <h2 className="experience-sub-title">Raytracer</h2>
             <p className="project-skills">C++, OpenGL</p>
@@ -171,7 +173,7 @@ function Code() {
           {/* Pharmacy Sales */}
           <div className="details-container color-container">
             <div className="article-container">
-              <img src="/assets/PharmacySalesDemo.png" alt="Pharmacy Sales" className="project-img" />
+              <img src={`${base}assets/PharmacySalesDemo.png`} alt="Pharmacy Sales" className="project-img" />
             </div>
             <h2 className="experience-sub-title">Pharmacy Sales Database</h2>
             <p className="project-skills">R (DBI, ggplotlib, kableExtra), SQL, SQLite, MySQL</p>

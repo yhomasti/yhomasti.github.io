@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 function About() {
   return (
     <section id="about">
@@ -8,7 +10,7 @@ function About() {
       <div className="about-intro-section">
         <div className="about-wb-container">
           <img 
-            src="/assets/Thats all folks-modified.png" 
+            src={`${base}assets/Thats all folks-modified.png`}
             alt="Thomas Yi at Warner Bros" 
             className="about-wb-image"
           />

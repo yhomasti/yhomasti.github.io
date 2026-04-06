@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+const base = import.meta.env.BASE_URL;
+
 function Profile() {
   const [reelExpanded, setReelExpanded] = useState(false);
 
@@ -26,13 +28,13 @@ function Profile() {
             </button>
             <div className="socials-row">
               <img 
-                src="/assets/linkedin.png" 
+                src={`${base}assets/linkedin.png`}
                 alt="My LinkedIn profile"
                 className="icon" 
                 onClick={() => window.location.href = 'https://www.linkedin.com/in/yhomasti/'}
               />
               <img 
-                src="/assets/email.png" 
+                src={`${base}assets/email.png`}
                 alt="Email me!"
                 className="icon" 
                 onClick={() => window.location.href = 'mailto:thomasyi2005@gmail.com'}
@@ -43,7 +45,7 @@ function Profile() {
 
         <div className="about-wb-container">
             <img 
-              src="/assets/Thats all folks-modified.png" 
+              src={`${base}assets/Thats all folks-modified.png`}
               alt="Thomas Yi at Warner Bros" 
               className="about-wb-image"
             />
@@ -69,7 +71,7 @@ function Profile() {
               muted
               playsInline
             >
-              <source src="/assets/3D/FireThatThing.mp4" type="video/mp4" />
+              <source src={`${base}assets/3D/FireThatThing.mp4`} type="video/mp4" />
             </video>
           </div>
 

@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 function Experience() {
   return (
     <section id="experience">
@@ -18,12 +20,12 @@ function Experience() {
                 <div className="article-container" style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                   
                   <img 
-                    src="/assets/Warner_Bros._Discovery_logo.png"
+                    src={`${base}assets/Warner_Bros._Discovery_logo.png`}
                     alt="Warner Bros Discovery"
                     style={{ width: '50%', height: 'auto', objectFit: 'contain' }}
                   />
                   <img 
-                    src="/assets/WB_GoT_background.jpg" 
+                    src={`${base}assets/WB_GoT_background.jpg`}
                     alt="Game of Thrones: Conquest"
                     className="project-img"
                     style={{ width: '50%', height: 'auto', objectFit: 'cover' }}

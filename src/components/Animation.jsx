@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 
+const base = import.meta.env.BASE_URL;
 
 function Animation() {
   return (
@@ -11,9 +12,9 @@ function Animation() {
         <div className="demo-reel-container">
         <div className="details-container color-container">
             <div className="article-container">
-            <a href="/3d_animations/demo_reel.html">
+            <a href={`${base}3d_animations/demo_reel.html`}>
                 <video className="project-video" autoPlay loop muted playsInline>
-                <source src="/assets/3D/DemoReelBleh.mp4" type="video/mp4" />
+                <source src={`${base}assets/3D/DemoReelBleh.mp4`} type="video/mp4" />
                 </video>
             </a>
             </div>
@@ -22,7 +23,7 @@ function Animation() {
             <div className="btn-container">
             <button 
                 className="btn btn-color-2 project-btn"
-                onClick={() => window.location.href = '/3d_animations/demo_reel.html'}
+                onClick={() => window.location.href = `${base}3d_animations/demo_reel.html`}
             >
                 View Project
             </button>
@@ -37,15 +38,15 @@ function Animation() {
           <AnimationCard
             title="Fire That Thing!"
             skills="Maya 2025"
-            videoSrc="/assets/3D/FireThatThing.mp4"
-            link="/3d_animations/fireThatThing.html"  
+            videoSrc={`${base}assets/3D/FireThatThing.mp4`}
+            link={`${base}3d_animations/fireThatThing.html`}
             />
 
             <AnimationCard
             title="24 Hour Animation Contest 2025"
             skills="Blender"
-            videoSrc="/assets/3D/049 - 301Boats - 24 HOURS Animation Contest for Students 2025 - 24HOURS Animation Contest for Students (1080p, h264, youtube).mp4"
-            link="/3d_animations/24Hour2025.html"  
+            videoSrc={`${base}assets/3D/049 - 301Boats - 24 HOURS Animation Contest for Students 2025 - 24HOURS Animation Contest for Students (1080p, h264, youtube).mp4`}
+            link={`${base}3d_animations/24Hour2025.html`}
             />
             {/*
             <AnimationCard
@@ -60,8 +61,8 @@ function Animation() {
             <AnimationCard
             title='"An Early April Morning"'
             skills="Maya 2025, Substance Painter, Photoshop"
-            videoSrc="/assets/3D/Thomas Yi - Animation 1 Final RERENDER.mp4"
-            link="/3d_animations/anim1.html"  
+            videoSrc={`${base}assets/3D/Thomas Yi - Animation 1 Final RERENDER.mp4`}
+            link={`${base}3d_animations/anim1.html`}
             />
             
             {/*
@@ -85,8 +86,8 @@ function Animation() {
             <AnimationCard
             title='"Aerial Anarchy"'
             skills="Maya 2025, After Effects, Audition"
-            videoSrc="/assets/3D/Talent Show COMPRESSED.mp4"
-            link="/3d_animations/aerialanarchy.html"  // Changed
+            videoSrc={`${base}assets/3D/Talent Show COMPRESSED.mp4`}
+            link={`${base}3d_animations/aerialanarchy.html`}
             />
         </div>
       </div>

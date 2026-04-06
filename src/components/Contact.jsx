@@ -1,3 +1,5 @@
+const base = import.meta.env.BASE_URL;
+
 function Contact() {
   return (
     <section id="contact">
@@ -5,11 +7,11 @@ function Contact() {
       <h1 className="title">Contact Me!</h1>
       <div className="contact-info-upper-container">
         <div className="contact-info-container">
-          <img src="/assets/email.png" alt="Email icon" className="icon contact-icon email-icon" />
+          <img src={`${base}assets/email.png`} alt="Email icon" className="icon contact-icon email-icon" />
           <p><a href="mailto:thomasyi2005@gmail.com">thomasyi2005@gmail.com</a></p>
         </div>
         <div className="contact-info-container">
-          <img src="/assets/linkedin.png" alt="LinkedIn icon" className="icon contact-icon" />
+          <img src={`${base}assets/linkedin.png`} alt="LinkedIn icon" className="icon contact-icon" />
           <p><a href="https://www.linkedin.com/in/yhomasti/">LinkedIn</a></p>
         </div>
       </div>
