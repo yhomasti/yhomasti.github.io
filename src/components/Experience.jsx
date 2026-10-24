@@ -8,8 +8,8 @@ const experiences = [
     id: 'skydance',
     title: 'Jr. Game Engineering Intern',
     company: 'Skydance Interactive',
-    duration: 'Jun 2026 - Oct 2026', // TODO: confirm dates
-    skills: 'Game Engineering, Gameplay Systems', // TODO: swap in your actual stack (e.g. Unreal, C++)
+    duration: 'Jun 2026 - Oct 2026',
+    skills: 'C++, Unreal Engine, Perforce',
     logo: {
       src: `${base}assets/ParaSkyCorp25_BrandMark_Wordmark_logos_2025/Brand%20Mark%20Logo/Raster/ParaSkyCorp25_BrandMark_Logo_Navy_RGB.png`,
       alt: 'Paramount Skydance logo',
@@ -19,16 +19,15 @@ const experiences = [
       alt: 'Skydance’s Behemoth key art',
     },
     details: [
-      //replace with what you actually worked on
       'Worked in C++ and Unreal Engine across Gameplay, Story, and Animation teams',
     ],
   },
   {
     id: 'wbgames',
-    title: 'Software Engineering Intern',
+    title: 'Software Engineering Co-op',
     company: 'Warner Bros. Games',
     duration: 'Jan 2026 - May 2026',
-    skills: 'Tools Programming, Developer Experience',
+    skills: 'Tools Programming, C#, Unity3D, Javascript, .NET, MS Office',
     logo: {
       src: `${base}assets/Warner-Brothers-Logo.png`,
       alt: 'Warner Bros. logo',
@@ -40,6 +39,26 @@ const experiences = [
     details: [
       'Worked as a Tools Programmer on the Developer Experience and Tooling team to support artists, designers, and engineers across the studio.',
       'Credited on Game of Thrones: Dragonfire',
+      
+    ],
+  },
+  {
+    id: 'realitydesign',
+    title: 'Augmented Reality Research Assistant Co-op',
+    company: 'Reality Design Lab @ Northeastern University',
+    duration: 'Aug 2025 - Dec 2025',
+    skills: 'Python, FastAPI, C#, Unity, HoloLens 2',
+    logo: {
+      src: `${base}assets/RealityDesignLogo.png`, 
+      alt: 'Northeastern University logo',
+    },
+    art: {
+      //video: `${base}research/Screen%20Recording%202025-10-20%20130337.mp4`,
+      src: `${base}assets/Northeastern-University-Logo.png`,
+      alt: 'Real-time AR scene alignment demo',
+    },
+    details: [
+      'Built a real-time FastAPI backend synchronizing pose data across 3 concurrent HoloLens clients in C#/Unity',
       
     ],
   },

@@ -45,37 +45,11 @@ function Code() {
   return (
     <section id="code">
       <p className="section__text__p1">Check out my Recent...</p>
-      <h1 className="title">Coding Projects</h1>
+      <h1 className="title">Technical Direction and Graphics</h1>
 
       <div className="experience-details-container">
         <div className="art-containers">
 
-          {/* AR Research Project */}
-          <div className="details-container color-container">
-            <div className="article-container">
-              <a href={`${base}code_projects/ar_research.html`}>
-                <video
-                  className="project-video"
-                  autoPlay
-                  loop
-                  muted
-                  playsInline
-                >
-                  <source src={`${base}research/Screen Recording 2025-10-20 130337.mp4`} type="video/mp4" />
-                </video>
-              </a>
-            </div>
-            <h2 className="experience-sub-title">Real-Time AR Scene Alignment</h2>
-            <p className="project-skills">Python, C#, FastAPI, PyTorch, OpenCV, NumPy, Unity, HoloLens 2</p>
-            <div className="btn-container">
-              <button
-                className="btn btn-color-2 project-btn"
-                onClick={() => window.location.href = `${base}code_projects/ar_research.html`}
-              >
-                View Project
-              </button>
-            </div>
-          </div>
 
           {/* Maya Animation Offset Editor*/}
           <div className={`details-container color-container ${expandedMaya ? 'maya-expanded-card' : ''}`}>
@@ -116,6 +90,35 @@ function Code() {
               </button>
             </div>
           </div>
+
+          {/* AR Research Project */}
+          <div className="details-container color-container">
+            <div className="article-container">
+              <a href={`${base}code_projects/ar_research.html`}>
+                <video
+                  className="project-video"
+                  autoPlay
+                  loop
+                  muted
+                  playsInline
+                >
+                  <source src={`${base}research/Screen Recording 2025-10-20 130337.mp4`} type="video/mp4" />
+                </video>
+              </a>
+            </div>
+            <h2 className="experience-sub-title">Real-Time AR Scene Alignment</h2>
+            <p className="project-skills">Python, C#, FastAPI, PyTorch, OpenCV, NumPy, Unity, HoloLens 2</p>
+            <div className="btn-container">
+              <button
+                className="btn btn-color-2 project-btn"
+                onClick={() => window.location.href = `${base}code_projects/ar_research.html`}
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+
+          
 
           {/* Lineart Generator with Video Demo */}
           <div className={`details-container color-container ${expandedDemo ? 'expanded-card' : ''}`}>
@@ -170,7 +173,8 @@ function Code() {
             </div>
           </div>
 
-          {/* Pharmacy Sales */}
+           {/* 
+
           <div className="details-container color-container">
             <div className="article-container">
               <img src={`${base}assets/PharmacySalesDemo.png`} alt="Pharmacy Sales" className="project-img" />
@@ -186,6 +190,8 @@ function Code() {
               </button>
             </div>
           </div>
+
+          */}
                {/* 
           
           <div className="details-container color-container">

@@ -27,9 +27,9 @@ function About() {
           <p className="about-description">
             I've gained industry experience in entertainment and developed a background in 
             programming and pipeline development, but I've always been fascinated in the 
-            world of animation and the creative side of production. Currently, I've been 
-            a Software Engineering intern with Warner Bros. Games, and having 
-            the chance to learn about the entertainment industry while picking up character animation 
+            world of animation and the creative side of production. Previously, I've been involved in the 
+            game industry with Skydance and Warner Bros. Games, and having 
+            the chance to learn about entertainment while picking up character animation 
             mentorship from industry professionals has been invaluable for my growth, both as a programmer and an artist. 
             I'm always looking for a chance to learn, and hope to see myself continue to 
             grow with opportunities in the world of entertainment and animation, whether I can play a technical or creative role in the pipeline.

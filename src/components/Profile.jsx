@@ -17,7 +17,7 @@ function Profile() {
         <div className="profile-intro-centered">
           <p className="section__text__p1">Hello! I am...</p>
           <h1 className="title">Thomas Yi</h1>
-          <p className="section__text__p2">3D Animator & Pipeline Development</p>
+          <p className="section__text__p2">Technical Director and Pipeline Engineer</p>
           
           <div className="profile-actions">
             <button 
@@ -49,34 +49,13 @@ function Profile() {
               alt="Thomas Yi at Warner Bros" 
               className="about-wb-image"
             />
-            <p className="about-current-position">Previously: Tools Programming Intern at Warner Bros. Games</p>
+            <p className="about-current-position">Previously: Paramount & Warner Bros.</p>
         </div>
       </div>
 
       {/* Two Cards - Animation + TD Reel */}
       <div className="profile-cards-row">
-        {/* 3D Animation Card */}
-        <div
-          className="profile-nav-card animation-card"
-          onClick={() => window.location.href = '#art'}
-        >
-          <h3>3D Animation</h3>
-          <p className="card-subtitle">Character Animation & Storytelling</p>
-
-          <div className="card-video-container">
-            <video
-              className="card-preview-video"
-              autoPlay
-              loop
-              muted
-              playsInline
-            >
-              <source src={`${base}assets/3D/FireThatThing.mp4`} type="video/mp4" />
-            </video>
-          </div>
-
-          <p className="card-cta">Click here to check out my animation portfolio →</p>
-        </div>
+       
 
         {/* TD Demo Reel Card */}
         <div className={`profile-nav-card tech-card ${reelExpanded ? 'reel-expanded' : ''}`}>
@@ -106,6 +85,8 @@ function Profile() {
             </div>
           )}
 
+          
+
           <div className="reel-buttons">
             <button
               className="btn btn-color-2 project-btn"
@@ -120,6 +101,29 @@ function Profile() {
               View Projects →
             </button>
           </div>
+        </div>
+
+         {/* 3D Animation Card */}
+        <div
+          className="profile-nav-card animation-card"
+          onClick={() => window.location.href = '#art'}
+        >
+          <h3>3D Animation</h3>
+          <p className="card-subtitle">Character Animation & Storytelling</p>
+
+          <div className="card-video-container">
+            <video
+              className="card-preview-video"
+              autoPlay
+              loop
+              muted
+              playsInline
+            >
+              <source src={`${base}assets/3D/FireThatThing.mp4`} type="video/mp4" />
+            </video>
+          </div>
+
+          <p className="card-cta">Click here to check out my animation portfolio →</p>
         </div>
       </div>
     </section>
